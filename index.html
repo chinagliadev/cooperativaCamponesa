@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Camponesa — Cooperativa de Produtos Naturais e Orgânicos</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="nav-logo">
+            <img src="./img/logo_camponesa.png" alt="Camponesa">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#produtores">Produtores</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#cta-final" class="nav-cta">Comprar agora</a>
+        <button class="nav-mobile-btn" aria-label="Menu"><i class="bi bi-list"></i></button>
+    </nav>
+
+    <section id="hero">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+            <div class="hero-eyebrow">Cooperativa de Produtos Orgânicos</div>
+            <h1 class="hero-title">Da terra para a<br>sua mesa. <em>Com<br>propósito.</em></h1>
+            <p class="hero-sub">Conectamos famílias agricultoras a consumidores que valorizam saúde, qualidade de vida e
+                respeito ao meio ambiente. Sem agrotóxico, sem intermediários, sem concessões.</p>
+            <div class="hero-btns">
+                <a href="#produtos" class="btn-primary">Conheça os produtos</a>
+                <a href="#quem-somos" class="btn-outline">Nossa história</a>
+            </div>
+            <div class="hero-badges">
+                <span class="badge badge-g"><i class="bi bi-shield-check"></i> Sem agrotóxicos</span>
+                <span class="badge badge-g"><i class="bi bi-house-door"></i> Agricultura familiar</span>
+                <span class="badge badge-a"><i class="bi bi-handshake"></i> Comércio justo</span>
+                <span class="badge badge-a"><i class="bi bi-patch-check"></i> Orgânico certificado</span>
+            </div>
+        </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#FCFAF2" />
+    </svg>
+
+    <section id="quem-somos">
+        <div class="qs-grid">
+            <div class="qs-text reveal">
+                <div class="reveal">
+                    <p class="section-label">Quem somos</p>
+                    <h2 class="section-title">Somos cooperativa.<br>Somos comunidade.<br>Somos campo.</h2>
+                </div>
+                <p>A Camponesa nasceu da união de famílias agricultoras que compartilham um mesmo sonho: produzir
+                    alimentos de verdade, sem abrir mão do respeito à natureza e da dignidade de quem trabalha a terra.
+                </p>
+                <p>Mais do que uma marca, somos um movimento. Um elo entre quem planta com cuidado e quem consome com
+                    responsabilidade — o caminho mais curto entre o solo e a sua saúde.</p>
+                <blockquote class="qs-quote">"Quando você escolhe um produto Camponesa, você escolhe apoiar uma família,
+                    fortalecer uma comunidade e cuidar do planeta."</blockquote>
+            </div>
+            <div class="qs-foto-wrap reveal">
+                <img src="img/quemsomos.png" class="qs-foto" alt="Cooperados da Camponesa no campo">
+                <div class="qs-foto-stats">
+                    <div class="qs-stat">
+                        <div class="qs-stat-num">80+</div>
+                        <div class="qs-stat-label">Famílias cooperadas</div>
+                    </div>
+                    <div class="qs-stat">
+                        <div class="qs-stat-num">100%</div>
+                        <div class="qs-stat-label">Sem agrotóxicos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        style="background:#FCFAF2">
+        <path d="M0,30 C480,0 960,60 1440,30 L1440,60 L0,60 Z" fill="#39432F" />
+    </svg>
+
+    <div class="mutirao-faixa"
+        style="background:url('./img/trabalhadores_camponesa.png') center 40%/cover no-repeat;height:340px;position:relative;display:flex;align-items:flex-end">
+        <div
+            style="position:absolute;inset:0;background:linear-gradient(to top,rgba(57,67,47,0.85) 0%,rgba(57,67,47,0.3) 60%,transparent 100%)">
+        </div>
+        <div style="position:relative;z-index:1;padding:32px 5%;color:var(--white)">
+            <p
+                style="font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--amber-light);margin-bottom:8px">
+                Comunidade & Mutirão</p>
+            <p style="font-family:'Fraunces',serif;font-size:clamp(20px,3vw,32px);font-weight:600;line-height:1.3">
+                Quando a terra chama, chegamos juntos.</p>
+        </div>
+    </div>
+
+    <section id="missao">
+        <div class="reveal">
+            <p class="section-label">Missão e Valores</p>
+            <h2 class="section-title">O que nos move vai<br>além do mercado</h2>
+            <p class="section-lead">Construir um sistema alimentar mais justo, saudável e sustentável — onde produtores
+                recebem o valor justo e consumidores têm acesso a alimentos que fazem bem para o corpo e para o mundo.
+            </p>
+        </div>
+        <div class="valores-grid">
+            <div class="valor-card reveal">
+                <div class="valor-icon"><i class="bi bi-sun"></i></div>
+                <div class="valor-title">Respeito à natureza</div>
+                <p class="valor-text">Cultivamos em harmonia com o ecossistema. Sem veneno, sem pressa, sem desperdício.
+                    A terra é nossa parceira — não um recurso a ser esgotado.</p>
+            </div>
+            <div class="valor-card reveal">
+                <div class="valor-icon"><i class="bi bi-people-fill"></i></div>
+                <div class="valor-title">Cooperação e solidariedade</div>
+                <p class="valor-text">Juntos chegamos mais longe. Cada cooperado faz parte de uma rede de apoio mútuo,
+                    onde o sucesso de um fortalece todos os outros.</p>
+            </div>
+            <div class="valor-card reveal">
+                <div class="valor-icon"><i class="bi bi-house-heart"></i></div>
+                <div class="valor-title">Agricultura familiar valorizada</div>
+                <p class="valor-text">O pequeno produtor é o coração do nosso sistema. Garantimos renda digna,
+                    visibilidade e futuro para famílias agricultoras.</p>
+            </div>
+            <div class="valor-card reveal">
+                <div class="valor-icon"><i class="bi bi-shield-check"></i></div>
+                <div class="valor-title">Comércio justo</div>
+                <p class="valor-text">Preços transparentes, cadeia curta e relações comerciais honestas. Sem
+                    intermediários que drenham o valor de quem realmente produz.</p>
+            </div>
+            <div class="valor-card reveal">
+                <div class="valor-icon"><i class="bi bi-basket"></i></div>
+                <div class="valor-title">Alimentação como cuidado</div>
+                <p class="valor-text">Acreditamos que a comida é remédio. Produzir e consumir com consciência é um gesto
+                    de amor por si mesmo e pelas próximas gerações.</p>
+            </div>
+            <div class="valor-card reveal">
+                <div class="valor-icon"><i class="bi bi-geo-alt"></i></div>
+                <div class="valor-title">Desenvolvimento local</div>
+                <p class="valor-text">Cada compra Camponesa fica na comunidade — em forma de renda, emprego, educação e
+                    bem-estar para as famílias do campo.</p>
+            </div>
+        </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        style="background:#39432F">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#F6F1E4" />
+    </svg>
+
+
+    <section id="produtos">
+        <div class="produtos-intro">
+            <div class="reveal">
+                <p class="section-label">Nossos Produtos</p>
+                <h2 class="section-title">Alimentos que a natureza<br>assina. Que o campo cultiva.</h2>
+            </div>
+            <a href="#cta-final" class="btn-outline-produtos reveal">Ver catálogo completo</a>
+        </div>
+        <div class="produtos-grid">
+            <div class="produto-card reveal">
+                <div class="produto-img"><img
+                        src="./img/salada.png"
+                        alt="Hortifruti Orgânico" /></div>
+                <div class="produto-body">
+                    <div class="produto-name">Hortifruti Orgânico</div>
+                    <div class="produto-desc">Folhas, legumes e raízes cultivados sem agrotóxicos, colhidos no ponto
+                        certo.</div>
+                    <div class="produto-footer"><span class="produto-price"><span
+                            class="produto-badge">Orgânico</span></div>
+                </div>
+            </div>
+            <div class="produto-card reveal">
+                <div class="produto-img"><img
+                    src="./img/mel_camponesa.png"
+                        alt="Mel Artesanal" /></div>
+                <div class="produto-body">
+                    <div class="produto-name">Mel Artesanal</div>
+                    <div class="produto-desc">Puro mel de abelhas nativas, sem conservantes. Cada pote carrega uma
+                        história.</div>
+                    <div class="produto-footer"><span
+                            class="produto-badge">Artesanal</span></div>
+                </div>
+            </div>
+            <div class="produto-card reveal">
+                <div class="produto-img"><img
+                        src="./img/produtos_camponesa.png"
+                        alt="Grãos e Cereais" /></div>
+                <div class="produto-body">
+                    <div class="produto-name">Grãos e Cereais</div>
+                    <div class="produto-desc">Feijão, arroz integral e milho crioulo — sem modificação genética, máxima
+                        nutrição.</div>
+                    <div class="produto-footer"><span
+                            class="produto-badge">Crioulo</span></div>
+                </div>
+            </div>
+            <div class="produto-card reveal">
+                <div class="produto-img"><img
+                        src="./img/produtos_gerais.png"
+                        alt="Produtos em Gerais" /></div>
+                <div class="produto-body">
+                    <div class="produto-name">Produto em Gerais</div>
+                    <div class="produto-desc">Da horta para a xícara. Ervas secas, temperos artesanais e blends que
+                        cuidam do corpo.</div>
+                    <div class="produto-footer"><span
+                            class="produto-badge">Natural</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        style="background:#F6F1E4">
+        <path d="M0,30 C480,0 960,60 1440,30 L1440,60 L0,60 Z" fill="#EFE7D6" />
+    </svg>
+    <div style="overflow:hidden;height:260px;position:relative">
+
+        <img src="./img/horta_camponesa.png" alt=""
+            style="width:100%;height:100%;object-fit:cover;object-position:bottom 30%;filter:sepia(20%) contrast(1.08) brightness(0.95)">
+        <div
+            style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(239,231,214,0.3) 0%,rgba(239,231,214,0) 40%,rgba(239,231,214,0.5) 100%)">
+        </div>
+    </div>
+
+    <section id="beneficios">
+
+        <div class="beneficios-cols">
+            <div class="beneficio-list">
+                <div class="reveal">
+                    <p class="section-label">Por que orgânico?</p>
+                    <h2 class="section-title">Porque sua saúde —<br>e o planeta — merecem o melhor.</h2>
+                </div>
+                <div class="beneficio-item reveal">
+                    <div class="beneficio-dot g"><i class="bi bi-heart-pulse"></i></div>
+                    <div>
+                        <h4>Mais nutrição, menos toxinas</h4>
+                        <p>Alimentos orgânicos têm níveis mais altos de vitaminas e antioxidantes — e zero resíduo de
+                            agrotóxicos que afetam o sistema hormonal e imunológico.</p>
+                    </div>
+                </div>
+                <div class="beneficio-item reveal">
+                    <div class="beneficio-dot g"><i class="bi bi-person-heart"></i></div>
+                    <div>
+                        <h4>Proteção para quem você ama</h4>
+                        <p>Crianças são especialmente vulneráveis aos pesticidas. Oferecer orgânicos desde cedo é
+                            investir na saúde do seu filho de forma que nenhum remédio substitui.</p>
+                    </div>
+                </div>
+                <div class="beneficio-item reveal">
+                    <div class="beneficio-dot a"><i class="bi bi-globe-americas"></i></div>
+                    <div>
+                        <h4>Solo vivo, futuro garantido</h4>
+                        <p>A agricultura orgânica preserva a microbiota do solo, mantendo-o fértil por gerações sem
+                            envenenar rios e lençóis freáticos.</p>
+                    </div>
+                </div>
+                <div class="beneficio-item reveal">
+                    <div class="beneficio-dot a"><i class="bi bi-flower3"></i></div>
+                    <div>
+                        <h4>Biodiversidade preservada</h4>
+                        <p>Abelhas, borboletas e pássaros têm seu habitat protegido. Sem inseticidas, o ecossistema se
+                            equilibra naturalmente e todos ganham.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="beneficio-visual reveal">
+                <p class="bv-title">O impacto real de cada escolha</p>
+                <div class="bv-stat"><span class="bv-stat-num">3×</span><span class="bv-stat-label">mais antioxidantes
+                        em alimentos orgânicos certificados</span></div>
+                <div class="bv-divider"></div>
+                <div class="bv-stat"><span class="bv-stat-num">0</span><span class="bv-stat-label">resíduos de
+                        agrotóxico nos produtos Camponesa</span></div>
+                <div class="bv-divider"></div>
+                <div class="bv-stat"><span class="bv-stat-num">60%</span><span class="bv-stat-label">menos emissão de
+                        carbono na produção agroecológica</span></div>
+                <div class="bv-divider"></div>
+                <div class="bv-stat"><span class="bv-stat-num">∞</span><span class="bv-stat-label">gerações beneficiadas
+                        com solo saudável e água limpa</span></div>
+            </div>
+        </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        style="background:#EFE7D6">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#FCFAF2" />
+    </svg>
+
+    <section id="sustentabilidade">
+        <div class="reveal">
+            <p class="section-label">Sustentabilidade</p>
+            <h2 class="section-title">Não é slogan aqui.<br>É o jeito que a gente vive.</h2>
+            <p class="section-lead">Na Camponesa, sustentabilidade está nas práticas, nas relações e em cada escolha que
+                guia nossa cadeia produtiva — da semente ao seu prato.</p>
+        </div>
+        <div class="sust-grid">
+            <div class="sust-card reveal">
+                <div class="sust-num">01</div>
+                <div class="sust-title">Produção agroecológica</div>
+                <p class="sust-text">Integramos lavoura, criação animal e floresta nativa — produzindo mais com menos
+                    impacto e regenerando o solo a cada safra.</p>
+            </div>
+            <div class="sust-card reveal">
+                <div class="sust-num">02</div>
+                <div class="sust-title">Embalagens ecoconscientes</div>
+                <p class="sust-text">Priorizamos materiais recicláveis e biodegradáveis. Reduzimos ao máximo o plástico
+                    descartável em toda a nossa cadeia.</p>
+            </div>
+            <div class="sust-card reveal">
+                <div class="sust-num">03</div>
+                <div class="sust-title">Cadeia curta de distribuição</div>
+                <p class="sust-text">Menos intermediários: menos emissão de carbono e mais valor para o produtor e para
+                    o consumidor. O caminho mais curto e mais honesto.</p>
+            </div>
+            <div class="sust-card reveal">
+                <div class="sust-num">04</div>
+                <div class="sust-title">Preservação de nascentes</div>
+                <p class="sust-text">Orientamos técnicas de irrigação eficiente, captação de água da chuva e preservação
+                    de nascentes em todas as propriedades.</p>
+            </div>
+            <div class="sust-card reveal">
+                <div class="sust-num">05</div>
+                <div class="sust-title">Reflorestamento ativo</div>
+                <p class="sust-text">Incentivamos o reflorestamento de áreas degradadas, fortalecendo corredores
+                    ecológicos e protegendo a fauna local.</p>
+            </div>
+            <div class="sust-card reveal">
+                <div class="sust-num">06</div>
+                <div class="sust-title">Economia circular</div>
+                <p class="sust-text">Resíduos viram compostagem → adubo → terra fértil → alimento. O ciclo se fecha e a
+                    comunidade prospera.</p>
+            </div>
+        </div>
+    </section>
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        style="background:#FCFAF2">
+        <path d="M0,30 C480,0 960,60 1440,30 L1440,60 L0,60 Z" fill="#EFE7D6" />
+    </svg>
+    <!-- 
+    <section id="produtores">
+        <div class="reveal">
+            <p class="section-label">Nossos Produtores</p>
+            <h2 class="section-title">Conheça as mãos que<br>cultivam o que chega à sua mesa</h2>
+            <p class="section-lead">Por trás de cada produto há uma família, uma história e uma escolha corajosa: viver
+                da terra com dignidade.</p>
+        </div>
+        <div class="produtores-grid">
+            <div class="produtor-card reveal">
+                <div class="produtor-avatar"><i class="bi bi-person-fill"></i></div>
+                <div class="produtor-name">Dona Maria Aparecida</div>
+                <div class="produtor-local">Hortaliças orgânicas · Minas Gerais · 28 anos</div>
+                <p class="produtor-quote">"Minha avó já plantava sem veneno. Nunca precisei mudar o que ela me ensinou.
+                    Hoje minha neta vai para a escola sabendo de onde vem a cenoura do almoço dela."</p>
+            </div>
+            <div class="produtor-card reveal">
+                <div class="produtor-avatar"><i class="bi bi-person-fill"></i></div>
+                <div class="produtor-name">Seu Benedito e Família</div>
+                <div class="produtor-local">Apicultura e mel artesanal · Goiás · 15 anos</div>
+                <p class="produtor-quote">"A abelha não vive em terra envenenada. Então cuido do mato, das flores, da
+                    mata ciliar. Quando o mel é farto, sei que a natureza está bem."</p>
+            </div>
+            <div class="produtor-card reveal">
+                <div class="produtor-avatar"><i class="bi bi-tree-fill"></i></div>
+                <div class="produtor-name">Irmãos Cavalcante</div>
+                <div class="produtor-local">Grãos e sementes crioulas · Bahia · 3 gerações</div>
+                <p class="produtor-quote">"Plantamos variedades que existem há séculos no Brasil. Guardar essas sementes
+                    é guardar a nossa identidade."</p>
+            </div>
+            <div class="produtor-card reveal">
+                <div class="produtor-avatar"><i class="bi bi-droplet-fill"></i></div>
+                <div class="produtor-name">Dona Lurdes</div>
+                <div class="produtor-local">Laticínios artesanais · São Paulo · 22 anos</div>
+                <p class="produtor-quote">"Minhas cabras comem pasto limpo, têm nome, têm afeto. Quem prova meu queijo
+                    sente isso. Tem gosto de cuidado e honestidade."</p>
+            </div>
+        </div>
+    </section> -->
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        style="background:#EFE7D6">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#F6F1E4" />
+    </svg>
+
+    <!-- <section id="depoimentos">
+        <div class="reveal">
+            <p class="section-label">Depoimentos</p>
+            <h2 class="section-title">O que dizem quem prova,<br>compra e acredita</h2>
+        </div>
+        <div class="dep-grid">
+            <div class="dep-card reveal">
+                <div class="dep-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="dep-text">"Comecei pela curiosidade e fiquei pelo sabor. A cenoura da Camponesa tem um gosto
+                    que me lembra a casa da minha avó. Hoje não consigo mais comer de outra forma."</p>
+                <div class="dep-author">
+                    <div class="dep-avatar">FR</div>
+                    <div>
+                        <div class="dep-info-name">Fernanda R.</div>
+                        <div class="dep-info-loc">São Paulo, SP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-card reveal">
+                <div class="dep-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="dep-text">"Tenho filho com alergia alimentar. Na Camponesa eu confio porque sei exatamente o
+                    que estou comprando — e de quem. Isso é raro e inestimável."</p>
+                <div class="dep-author">
+                    <div class="dep-avatar">MT</div>
+                    <div>
+                        <div class="dep-info-name">Marcos T.</div>
+                        <div class="dep-info-loc">Belo Horizonte, MG</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-card reveal">
+                <div class="dep-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="dep-text">"Me sinto bem sabendo que meu dinheiro vai para uma família que trabalha com
+                    respeito. Comprar aqui é diferente. É uma escolha que faz sentido."</p>
+                <div class="dep-author">
+                    <div class="dep-avatar">JM</div>
+                    <div>
+                        <div class="dep-info-name">Juliana M.</div>
+                        <div class="dep-info-loc">Campinas, SP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-card reveal">
+                <div class="dep-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="dep-text">"O mel de abelhas nativas é simplesmente incrível. Ainda vem com uma carta do
+                    produtor. Que iniciativa linda — faz você sentir parte de algo maior."</p>
+                <div class="dep-author">
+                    <div class="dep-avatar">RK</div>
+                    <div>
+                        <div class="dep-info-name">Roberto K.</div>
+                        <div class="dep-info-loc">Curitiba, PR</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-card reveal">
+                <div class="dep-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="dep-text">"Antes vendia para atravessador e sempre perdia dinheiro. Na Camponesa recebi um
+                    preço justo pela primeira vez. Minha família pôde reformar a casa."</p>
+                <div class="dep-author">
+                    <div class="dep-avatar" style="background:var(--green-light);color:var(--green-deep)">SA</div>
+                    <div>
+                        <div class="dep-info-name">Seu Antônio</div>
+                        <div class="dep-info-loc">Produtor · Minas Gerais</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-card reveal">
+                <div class="dep-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p class="dep-text">"Não é só a renda. É o respeito. As pessoas querem saber meu nome, minha história.
+                    Nunca me senti assim antes. Me sinto parte de algo importante."</p>
+                <div class="dep-author">
+                    <div class="dep-avatar" style="background:var(--green-light);color:var(--green-deep)">DC</div>
+                    <div>
+                        <div class="dep-info-name">Dona Conceição</div>
+                        <div class="dep-info-loc">Produtora · Goiás</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        style="background:#F6F1E4">
+        <path d="M0,30 C480,0 960,60 1440,30 L1440,60 L0,60 Z" fill="#FCFAF2" />
+    </svg>
+
+    <section id="faq">
+        <div class="reveal" style="text-align:center">
+            <p class="section-label">Perguntas Frequentes</p>
+            <h2 class="section-title">Ficou com dúvida?<br>A gente explica com prazer.</h2>
+        </div>
+        <div class="faq-wrap">
+            <div class="faq-item">
+                <button class="faq-question">Como funciona a cooperativa Camponesa?<span
+                        class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>A Camponesa reúne produtores rurais que se unem para comercializar seus produtos com mais poder
+                        de negociação e melhores condições de renda. Cada cooperado tem voz igual nas decisões,
+                        independentemente do tamanho de sua propriedade. Comprando aqui, você apoia diretamente as
+                        famílias que cultivam.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Os produtos realmente são orgânicos?<span
+                        class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Sim. Todos os produtos são cultivados sem agrotóxicos, fertilizantes químicos sintéticos ou
+                        organismos geneticamente modificados. Estamos em processo de certificação orgânica oficial e
+                        trabalhamos com auditoria interna de boas práticas. Você pode solicitar a ficha técnica de
+                        qualquer produto — a transparência é inegociável para nós.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Como faço para comprar os produtos?<span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Você pode comprar pelo nosso site, nas feiras livres parceiras, por encomenda semanal com entrega
+                        em domicílio ou em pontos de distribuição na sua cidade. Fale com a gente para saber a opção
+                        mais prática para você.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">A entrega é feita para todo o Brasil?<span
+                        class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Realizamos entregas nas regiões Sudeste e Centro-Oeste, com pontos de distribuição em expansão.
+                        Para produtos secos (grãos, chás, conservas), despachamos para todo o território nacional.
+                        Consulte a disponibilidade para a sua cidade no formulário de contato.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Como posso me tornar um cooperado?<span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Qualquer produtor rural que pratique ou esteja disposto a adotar métodos de cultivo sem
+                        agrotóxicos pode solicitar filiação. O processo envolve uma visita técnica à propriedade, uma
+                        conversa sobre valores e práticas, e uma votação entre os cooperados ativos. Entre em contato e
+                        inicie sua jornada.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Há outras formas de apoiar a Camponesa?<span
+                        class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Sim! Indique a Camponesa para amigos e familiares, compartilhe nossas histórias nas redes
+                        sociais, participe de nossas feiras e eventos ou assine nossa cesta mensal. Cada gesto conta e
+                        fortalece toda a nossa rede de produtores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-final">
+        <div class="cta-inner">
+            <p class="section-label" style="color:var(--amber);text-align:center;margin-bottom:20px">Comece hoje</p>
+            <h2 class="cta-title">O campo está<br><em>esperando por você.</em></h2>
+            <p class="cta-sub">Cada produto que você escolhe da Camponesa é um voto pelo mundo que você quer habitar.
+                Começa por uma cenoura. Por um mel. Por uma escolha.</p>
+            <div class="cta-btns">
+                <a href="#produtos" class="btn-amber">Ver produtos</a>
+                <a href="#produtores" class="btn-white-outline">Conhecer produtores</a>
+            </div>
+            <div class="cta-contact">
+                <div class="cta-contact-item"><i class="bi bi-whatsapp"></i> <strong>WhatsApp</strong> (19) 99999-0000
+                </div>
+                <div class="cta-contact-item"><i class="bi bi-envelope-fill"></i> <strong>E-mail</strong>
+                    contato@camponesa.coop.br</div>
+                <div class="cta-contact-item"><i class="bi bi-geo-alt-fill"></i> <strong>Americana, SP</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">campo<span>nesa</span></div>
+                <p class="footer-tagline">Cooperativa de Produtos Naturais e Orgânicos. Da terra para a sua mesa, com
+                    propósito.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navegação</h5>
+                <ul>
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#missao">Missão e valores</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Produtor</h5>
+                <ul>
+                    <li><a href="#produtores">Conheça os produtores</a></li>
+                    <li><a href="#cta-final">Seja cooperado</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contato</h5>
+                <ul>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">E-mail</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Camponesa Cooperativa · Todos os direitos reservados</p>
+            <div class="footer-seals">
+                <span class="footer-seal"><i class="bi bi-patch-check"></i> Orgânico</span>
+                <span class="footer-seal"><i class="bi bi-shield-check"></i> Comércio justo</span>
+                <span class="footer-seal"><i class="bi bi-house-door"></i> Agricultura familiar</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
