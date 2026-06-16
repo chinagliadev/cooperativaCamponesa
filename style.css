@@ -486,13 +486,14 @@ section {
 .produto-card {
     background: var(--white);
     border: 1px solid var(--green-mid);
-    border-radius: var(--radius-md);
     overflow: hidden;
     transition: transform .2s, box-shadow .2s;
     cursor: pointer;
     padding: 4px;
     border-radius: 16px;
     min-height: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-outline-produtos {
@@ -543,6 +544,7 @@ section {
     display: flex;
     flex-direction: column;
     margin-top: 12px;
+    flex: 1;
 }
 
 .produto-name {
@@ -557,7 +559,8 @@ section {
     font-size: 13px;
     color: var(--text-muted);
     line-height: 1.5;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    flex: 1;
 }
 
 .produto-footer {
@@ -1232,4 +1235,63 @@ footer {
         text-align: center;
         border-radius: 0;
     }
+}
+
+/* DIRETORIA */
+#diretoria {
+    background: var(--earth)
+}
+
+.diretoria-grupo {
+    margin-top: 48px
+}
+
+.diretoria-grupo-title {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--green-deep);
+    border-left: 3px solid var(--amber);
+    padding-left: 14px;
+    margin-bottom: 20px
+}
+
+.diretoria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px
+}
+
+.diretoria-card {
+    background: var(--white);
+    border: 1px solid var(--green-mid);
+    border-radius: var(--radius-md);
+    padding: 20px 24px;
+    transition: border-color .2s
+}
+
+.diretoria-card:hover {
+    border-color: var(--amber)
+}
+
+.diretoria-card--suplente {
+    background: var(--bg);
+    border-style: dashed
+}
+
+.diretoria-cargo {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 6px
+}
+
+.diretoria-nome {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--green-deep);
+    line-height: 1.3
 }
